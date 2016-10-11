@@ -25,8 +25,8 @@
                         <td><%=item.telefono %></td>
                         <td><%=item.email %></td>
                         <td><%=item.direccion %></td>
-                        <td><%=item.fechacreacion %></td>
-                        <td><%=item.fechamodificacion  %></td>
+                        <td><%=_.formatdate(item.fechacreacion) %></td>
+                        <td><%=_.formatdate(item.fechamodificacion) %></td>
 
                     </tr>
                     <% }); %>

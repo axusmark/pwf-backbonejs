@@ -38,3 +38,10 @@ var ListaPersonaView = Backbone.View.extend({
         return this;
     }
 });
+
+
+
+_.formatdate = function (stamp) {
+    var d = new Date(stamp); // or d = new Date(date)
+    return d.getDate()+'-'+(d.getMonth() + 1)+'-'+d.getFullYear()+' '+d.getHours()+':'+d.getMinutes();
+};
